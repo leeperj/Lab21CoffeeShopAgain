@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>Register</h1>
+
+@model  CoffeeShop3.Models.User
+
+<form action="Database/Register" method="post">
+    First Name: <input type="text" name="FirstName" />
+    Last Name: <input type="text" name="LastName" />
+    UserName: <input type="text" name="UserName" />
+    Password: <input type="text" name="Password" />
+    Phone Number: <input type="text" name="PhoneNumber" />
+    Address: <input type="text" name="Address" />
+    Funds: <input type="number" name="Funds" />
+
+           <input type="submit"  value="Submit" />
+</form>

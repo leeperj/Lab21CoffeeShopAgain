@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Shop";
+}
+
+<h1>Shop</h1>
+
+@model IEnumerable<CoffeeShop3.Models.Items>
+
+<table class="table">
+    <tr>
+        <th>Item Name</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+@foreach (var item in Model)
+{
+<tr>
+    <td>@item.Name</td>
+    <td>@item.Description</td>
+    <td>@item.Quantity</td>
+    <td>$@item.Price</td>
+    <td></td>
+</tr>
+}
+</table>
